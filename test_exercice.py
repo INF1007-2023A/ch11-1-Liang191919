@@ -25,13 +25,13 @@ class TestWeapon(unittest.TestCase):
 
 	def test_init(self):
 		self.assertEqual(self.w3.name, "w3")
-		self.assertEqual(self.w3.power, 69)
-		self.assertEqual(self.w3.min_level, 42)
+		self.assertEqual(self.w3.attacklv, 69)
+		self.assertEqual(self.w3.minlv, 42)
 
 	def test_unarmed(self):
 		self.assertEqual(self.w4.name, "Unarmed")
-		self.assertEqual(self.w4.power, Weapon.UNARMED_POWER)
-		self.assertEqual(self.w4.min_level, 1)
+		self.assertEqual(self.w4.attacklv, Weapon.UNARMED_POWER)
+		self.assertEqual(self.w4.minlv, 1)
 
 
 class TestCharacter(unittest.TestCase):
